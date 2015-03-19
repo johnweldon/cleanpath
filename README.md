@@ -16,3 +16,7 @@ $ echo $FAKEPATH
 Notice:
 1) Redundant paths removed, but relative order of first occurence is maintained.
 2) Relative (unsafe) paths removed.
+
+
+[![Build Status](https://travis-ci.org/johnweldon/cleanpath.svg)](https://travis-ci.org/johnweldon/cleanpath)
+[![GoDoc](https://godoc.org/gopkg.in/johnweldon/cleanpath.v0?status.svg)](https://godoc.org/gopkg.in/johnweldon/cleanpath.v0)
