@@ -5,6 +5,7 @@ go:
     - 1.4
     - tip
 install:
+    - go get gopkg.in/johnweldon/cleanpath.v0
     - go get code.google.com/p/go.tools/cmd/cover || go get golang.org/x/tools/cmd/cover
     - go build -v ./...
 script:
