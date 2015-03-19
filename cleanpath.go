@@ -1,7 +1,6 @@
 package cleanpath
 
 import (
-	"os"
 	"path"
 	"strings"
 )
@@ -10,11 +9,11 @@ import (
 // and returns a string with the elements joined by the os specific
 // path separator, and with the duplicates removed, without losing
 // initial order.
-func Clean(paths []string) string {
+func Clean(sep rune, paths ...string) string {
 	pos := 0
 	working := make(map[string]int)
 	for _, pth := range paths {
-		for _, segment := range strings.FieldsFunc(pth, func(c rune) bool { return c == os.PathListSeparator }) {
+		for _, segment := range strings.FieldsFunc(pth, func(c rune) bool { return c == sep }) {
 			clean := path.Clean(segment)
 			// ignore relative paths
 			if !path.IsAbs(clean) {
@@ -31,5 +30,5 @@ func Clean(paths []string) string {
 	for segment, position := range working {
 		array[position] = segment
 	}
-	return strings.Join(array, string(os.PathListSeparator))
+	return strings.Join(array, string(sep))
 }
