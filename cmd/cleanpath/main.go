@@ -8,7 +8,7 @@ import (
 	"gopkg.in/johnweldon/cleanpath.v0"
 )
 
-var sep separator = separator{val: os.PathListSeparator}
+var sep = separator{val: os.PathListSeparator}
 
 type separator struct {
 	val rune
