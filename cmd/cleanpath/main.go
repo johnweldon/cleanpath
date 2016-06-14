@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"gopkg.in/johnweldon/cleanpath.v0"
+	"github.com/johnweldon/cleanpath"
 )
 
 var sep = separator{val: os.PathListSeparator}

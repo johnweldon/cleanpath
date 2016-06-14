@@ -19,4 +19,4 @@ Notice:
 
 
 [![Build Status](https://travis-ci.org/johnweldon/cleanpath.svg)](https://travis-ci.org/johnweldon/cleanpath)
-[![GoDoc](https://godoc.org/gopkg.in/johnweldon/cleanpath.v0?status.svg)](https://godoc.org/gopkg.in/johnweldon/cleanpath.v0)
+[![GoDoc](https://godoc.org/github.com/johnweldon/cleanpath?status.svg)](https://godoc.org/github.com/johnweldon/cleanpath)

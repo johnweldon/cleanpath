@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"gopkg.in/johnweldon/cleanpath.v0"
+	"github.com/johnweldon/cleanpath"
 )
 
 func TestCleanpath(t *testing.T) {
